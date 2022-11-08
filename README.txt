@@ -1,2 +1,2 @@
-# PreEntrega1-Lecam
-# Primera pre entrega: Simulador interactivo
+# PreEntrega2-Lecam
+# Segunda pre entrega: 
