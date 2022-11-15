@@ -266,21 +266,21 @@ function listarArticulos(ARTICULOS, CARRITO, opcionArticulos) {
 // ********************************         FUNCION verCarrito()         *************************************
 // # Propósito: mostrar los articulos que contiene el carrito
 // # Parametros: CARRITO = contiene los articulos agregados de la tienda
-function verCarrito(CARRITO){
+function verCarrito(CARRITO) {
     let mostrarArticulos = ""
     let contador = 0
-    let precioDescuento =0
+    let precioDescuento = 0
     let precioTotal = 0
 
-    for(let cadaArticulo of CARRITO){
+    for (let cadaArticulo of CARRITO) {
         console.log(cadaArticulo.nombre)
-        contador+=1
+        contador += 1
         mostrarArticulos += `${contador}. ${cadaArticulo.nombre} - [$${cadaArticulo.precio}]\n`
         precioTotal += cadaArticulo.precio
     }
 
-    precioDescuento = precioTotal - ((precioTotal*15)/100)
-    alert(mostrarArticulos + `\n0. TOTAL = [$${precioTotal}] \n#. CON CODIGO DE DESCUENTO = [$${precioDescuento}]`)
+    precioDescuento = precioTotal - ((precioTotal * 15) / 100)
+    alert(mostrarArticulos + `\n#  TOTAL = [$${precioTotal}]  #\n#  CON CODIGO DE DESCUENTO = [$${precioDescuento}]  #`)
 }
 
 // ***********************************************************************************************************
